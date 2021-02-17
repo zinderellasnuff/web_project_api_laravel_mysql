@@ -21,3 +21,10 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::get('categoria','App\Http\Controllers\CategoriaController@getCategoria');
 
+Route::get('categoria/{id}','App\Http\Controllers\CategoriaController@getCategoriaxid');
+
+Route::post('addCategoria','App\Http\Controllers\CategoriaController@insertcategoria');
+
+Route::put('updateCategoria/{id}','App\Http\Controllers\CategoriaController@updatecategoria');
+
+Route::delete('deleteCategoria/{id}','App\Http\Controllers\CategoriaController@deletecategoria');
